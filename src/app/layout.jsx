@@ -1,13 +1,12 @@
-import { Roboto_Mono } from '@next/font/google'
 import "./globals.css";
+import { Noto_Sans_Thai } from '@next/font/google'
 import LineProvider from "./providers/LineProvider";
 import Providers from "./redux/Provider";
 import LayoutWrapper from "./layoutWrapper";
 
-const robotoMono = Roboto_Mono({
-  subsets: ['latin'],
+const notoSansThai  = Noto_Sans_Thai({
+  subsets: ['thai'],
   weight: ['100','200','300','400','500','600','700'], // เลือกน้ำหนักที่ต้องการ
-  variable: '--font-roboto-mono' // ใช้ตัวแปร CSS สำหรับฟอนต์นี้
 })
 
 export const metadata = {
@@ -20,7 +19,7 @@ export default function RootLayout({ children }) {
     <Providers>
       <html lang="en">
         <body
-          className={robotoMono.variable}
+          className={notoSansThai.className}
         >
           <LineProvider>
             <LayoutWrapper>

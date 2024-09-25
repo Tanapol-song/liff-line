@@ -49,8 +49,8 @@ const CardOrder = () => {
             {cart.map((item, index) => {
                 return (
                     <div key={index} className='w-full flex flex-col bg-white p-2 mb-2 rounded-lg border shadow-md transition-transform transform'>
-                        <div className='flex items-center justify-between'>
-                            <h3 className='text-gray-600 text-md'>
+                        <div className='flex items- justify-between'>
+                            <h3 className='text-gray-600 text-lg font-medium'>
                                 {item.name}
                             </h3>
                             <button onClick={() => handleDeleteOrder(index)}>
@@ -58,8 +58,8 @@ const CardOrder = () => {
                             </button>
                         </div>
                         <div className='flex items-center justify-between'>
-                            <p className='text-blue-700 text-xl'>{item.price}<span className='text-gray-600 text-base'> บาท</span></p>
-                            <div className='flex py-3 items-center gap-6'>
+                            <p className='text-blue-700 text-xl font-medium'>{item.price}<span className='text-gray-600 text-base'> บาท</span></p>
+                            <div className='flex py-1 items-center gap-6'>
                                 <div className='flex bg-white shadow-gray-700/20 shadow-md rounded-full px-1 py-1 items-center'>
                                     <button onClick={() => handleMinusTotal(index)} ><FiMinus size={15} className='text-blue-700' /></button>
                                 </div>

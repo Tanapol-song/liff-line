@@ -50,13 +50,13 @@ const page = ({ params }) => {
         <div>
             {shopDetail === null ?
                 <p>loading...</p> :
-                <div className='w-full mx-auto'>
-                    <div className='pt-2 pb-3 bg-white shadow-md border-b-2 border-gray-500/30 px-1'>
-                        <button onClick={handleBackPage}>
-                            <IoIosArrowBack size={18} />
-                        </button>
+                <div className='w-full flex flex-col'>
+                    <div className='w-full bg-white shadow-md border-b-2 border-gray-500/30 px-1 py-2'>
                         <div className='w-full px-4'>
-                            <h2 className='text-lg font-semibold'>{shopDetail?.name}</h2>
+                            <button onClick={handleBackPage}>
+                                <IoIosArrowBack size={18} />
+                            </button>
+                            <h2 className='text-lg font-bold'>{shopDetail?.name}</h2>
                             <p className='text-xs text-gray-500'>{shopDetail?.detail.logcation} | <span>{shopDetail?.detail.tell}</span></p>
                             <div className='flex'>
                                 <div className='bg-blue-700 py-1 px-3 rounded-full mt-2'>
@@ -77,7 +77,7 @@ const page = ({ params }) => {
                     <PopupMenu menu={onSeletedMenu} isOpen={isOpen} onClose={handleClosePopup} />
                     {/* Footer payment */}
                     {cart?.length > 0 &&
-                        <FooterCart shop={shopDetail}/>
+                        <FooterCart shop={shopDetail} />
                     }
                 </div>
             }

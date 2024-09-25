@@ -49,12 +49,16 @@ const FooterOrder = () => {
         <Fragment>
             <div className='w-full bg-white fixed bottom-0 py-4 px-4 shadow-black shadow-lg'>
                 <div className='flex flex-col'>
-                    <div className='flex items-center justify-between pb-4'>
-                        <h1>
+                    <div className='flex items-end justify-between'>
+                        <h1 className='text-gray-600 font-medium'>
                             ราคารวม
                         </h1>
-                        <p>{totalPrice}<span> บาท</span></p>
+                        <div className='flex items-end gap-2'>
+                            <h1 className='text-2xl text-red-700 font-medium'>{totalPrice}</h1>
+                            <p className='text-md text-gray-600 font-medium'>บาท</p>
+                        </div>
                     </div>
+                    <p className='py-2 text-sm text-orange-700'>โปรดเช็ครายการทั้งหมดก่อน</p>
                     <div className='flex items-center justify-center'>
                         <button onClick={generateQrcode} className='w-full bg-blue-700 rounded-md py-1'>
                             <p className='text-white'>ถัดไป</p>
@@ -63,7 +67,7 @@ const FooterOrder = () => {
                 </div>
 
             </div>
-            <PaymentModal isVisible={showModal} isQrcodeUrl={qrCodeDataUrl}/>
+            <PaymentModal isVisible={showModal} isQrcodeUrl={qrCodeDataUrl} />
         </Fragment>
     )
 }

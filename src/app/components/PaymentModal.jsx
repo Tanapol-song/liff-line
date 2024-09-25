@@ -17,7 +17,7 @@ const PaymentModal = ({ isVisible, isQrcodeUrl }) => {
                     <button onClick={handleCloseLiff} className='bg-blue-700 rounded-md px-6 py-1'>
                         <p className='text-white'>กลับสู่หน้า line</p>
                     </button>
-                    <p className='text-sm'>กรุณส่งรูป Qrcode ให้แอดมินตรวจสอบยอดชำระ</p>
+                    <p className='text-sm text-orange-600'>กรุณาส่งรูปสลิปให้แอดมินตรวจสอบยอดชำระ</p>
                 </div>
             </div>
         </div>
