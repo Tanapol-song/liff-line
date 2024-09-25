@@ -5,27 +5,17 @@ import { createFlexMessage } from '@/lib/flexmessage';
 
 export async function POST(request) {
     try {
-        // const { userId, token, message } = await request.json();
+        const { userId, token, cart, shop, qrCodeDataURL } = await request.json();
 
-        // const data = {
-        //     "to": userId,
-        //     "messages": [
-        //         {
-        //             "type": "text",
-        //             "text": message
-        //         }
-        //     ]
-        // };
-        const { userId, token, cart, shop} = await request.json();
         // สร้าง Flex Message
-        const flexMessage = createFlexMessage(cart,shop);
+        const flexMessage = createFlexMessage(cart, shop, qrCodeDataURL);
 
         const data = {
             "to": userId,
             "messages": [
                 {
                     "type": "flex",
-                    "altText": "this it flex",
+                    "altText": "ใบรายการอาหาร",
                     "contents": flexMessage
                 }
             ]

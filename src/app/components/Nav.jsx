@@ -17,7 +17,7 @@ const Nav = () => {
     }
 
     return (
-        <nav className='container bg-white border-b shadow-sm py-2 px-4'>
+        <nav className='w-full bg-white border-b shadow-sm py-2 px-4'>
             <div className='flex items-center justify-between'>
                 <div className='flex text-lg font-semibold'>
                     <p className='text-blue-700'>Welcome <span className='text-black'>{user?.displayName}</span></p>
