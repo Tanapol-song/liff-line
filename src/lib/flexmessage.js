@@ -1,8 +1,10 @@
+export const createFlexMessage = (cart, shop, qrCodeDataURL) => {
+    // console.log('cartFlex', cart)
+    // console.log("shop", shop)
+    const base64Data = qrCodeDataURL.split(',')[1];
+    const image = atob(base64Data);
 
-export const createFlexMessage = (cart,shop) => {
-    console.log('cartFlex',cart)
-    console.log("shop",shop)
-   
+    console.log("image", image)
     //send Flex message
     const foodItems = cart.map(order => ({
         "type": "box",
@@ -37,7 +39,7 @@ export const createFlexMessage = (cart,shop) => {
                     "weight": "bold",
                     "color": "#1DB446",
                     "size": "sm"
-                  },
+                },
                 {
                     "type": "text",
                     "text": shop.name,
@@ -93,6 +95,16 @@ export const createFlexMessage = (cart,shop) => {
                         }
                     ]
                 },
+                {
+                    "type": "separator",
+                    "margin": "xxl"
+                },
+                // {
+                //     "type": "image",
+                //     "url": image, // ใส่ QR Code ในรูปแบบ Data URL
+                //     "size": "full",
+                //     "aspectRatio": "1:1"
+                // },
                 {
                     "type": "separator",
                     "margin": "xxl"
