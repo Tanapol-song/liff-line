@@ -139,7 +139,19 @@ export const services = [
         {
             logcation: '99 ซ.ลาดกระบัง 99 แยก 12 ,ลาดกระบัง ,ลาดกระบัง กรุงเทพมหานคาร,10510',
             tell: '096-999-9999'
-        }
+        },
+        foods: [
+            {
+                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
+                name: 'ผัดไทย',
+                price: 50,
+            },
+            {
+                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
+                name: 'ข้าวผัด',
+                price: 60,
+            },
+        ]
     },
     {
         num: '04',
@@ -151,7 +163,19 @@ export const services = [
         {
             logcation: '99 ซ.ลาดกระบัง 99 แยก 12 ,ลาดกระบัง ,ลาดกระบัง กรุงเทพมหานคาร,10510',
             tell: '096-999-9999'
-        }
+        },
+        foods: [
+            {
+                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
+                name: 'ผัดไทย',
+                price: 50,
+            },
+            {
+                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
+                name: 'ข้าวผัด',
+                price: 60,
+            },
+        ]
     },
     {
         num: '05',
@@ -163,7 +187,19 @@ export const services = [
         {
             logcation: '99 ซ.ลาดกระบัง 99 แยก 12 ,ลาดกระบัง ,ลาดกระบัง กรุงเทพมหานคาร,10510',
             tell: '096-999-9999'
-        }
+        },
+        foods: [
+            {
+                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
+                name: 'ผัดไทย',
+                price: 50,
+            },
+            {
+                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
+                name: 'ข้าวผัด',
+                price: 60,
+            },
+        ]
     },
 
 ]

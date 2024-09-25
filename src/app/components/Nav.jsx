@@ -1,16 +1,12 @@
 "use client"
 import React from 'react'
 import { useSelector } from 'react-redux'
-import { FaBasketShopping } from "react-icons/fa6";
 import { useRouter } from 'next/navigation'
 
 const Nav = () => {
     const user = useSelector((state => state.user.user))
     const cart = useSelector((state) => state.user.cart)
-
     const router = useRouter()
-    //console.log(cart?.length)
-    //console.log('Proflie', user)
 
     const handleCartPage = () => {
         router.push('/Cart');
@@ -24,7 +20,6 @@ const Nav = () => {
                 </div>
                 <div className='flex items-center gap-3'>
                     <button onClick={handleCartPage} className=' relative'>
-                        <FaBasketShopping size={22} className='cursor-pointer text-gray-700' />
                         {cart?.length > 0 &&
                             <div className='absolute -top-1 -right-1'>
                                 <div className='bg-red-500 py-[2px] px-[5px] rounded-full'>

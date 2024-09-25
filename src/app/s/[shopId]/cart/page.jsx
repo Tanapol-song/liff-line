@@ -23,7 +23,7 @@ const page = () => {
                 <div className='w-full flex flex-col px-4'>
                     {/* Header */}
                     <div className='w-full flex justify-center py-3 relative'>
-                        <h1 className='text-gray-600'>ตะกร้าของฉัน</h1>
+                        <h1 className='text-black font-medium'>ตะกร้าของฉัน</h1>
                         <button onClick={handleBackPage} className='absolute left-0 inset-y-0'>
                             <IoIosArrowBack size={18} />
                         </button>
