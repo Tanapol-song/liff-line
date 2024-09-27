@@ -1,11 +1,10 @@
 import React from 'react'
 import liff from '@line/liff';
 
-
 const PaymentModal = ({ isVisible, isQrcodeUrl }) => {
     if (!isVisible) return null;
 
-    const handleCloseLiff = () =>{
+    const handleCloseLiff = () => {
         liff.closeWindow();
     }
     return (

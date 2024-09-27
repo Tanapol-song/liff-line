@@ -6,7 +6,8 @@ const initialState = {
         pictureUrl: undefined,
         statusMessage: undefined,
         userId: null,
-        cart: []
+        cart: [],
+        shopDetail:[]
     }
 }
 

@@ -1,5 +1,5 @@
 "use client"
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux';
 import { useRouter } from 'next/navigation';
 
@@ -10,32 +10,44 @@ import { IoIosArrowBack } from 'react-icons/io';
 import CardOrder from '@/app/components/CardOrder';
 import FooterOrder from '@/app/components/FooterOrder';
 
-const page = () => {
+//data
+import { services } from '@/lib/enums';
+
+const page = ({ params }) => {
     const rounter = useRouter();
+    const { shopId } = params;
+    const [shopDetail, setShopDetail] = useState(null)
     const { cart, userId } = useSelector((state) => state.user.user)
+
+    useEffect(() => {
+        const current = services.find((shop) => shop.num === shopId)
+        setShopDetail(current)
+    }, [shopId])
+
+    // console.log("shopDetail", shopDetail)
 
     const handleBackPage = () => {
         rounter.back()
     }
 
     return (
-            <div className='w-full h-full flex flex-col'>
-                <div className='w-full flex flex-col px-4'>
-                    {/* Header */}
-                    <div className='w-full flex justify-center py-3 relative'>
-                        <h1 className='text-black font-medium'>ตะกร้าของฉัน</h1>
-                        <button onClick={handleBackPage} className='absolute left-0 inset-y-0'>
-                            <IoIosArrowBack size={18} />
-                        </button>
-                    </div>
-
-                    {/* Container Card */}
-                    <div className='w-full py-3'>
-                        <CardOrder />
-                    </div>
+        <div className='w-full h-full flex flex-col'>
+            <div className='w-full flex flex-col px-4'>
+                {/* Header */}
+                <div className='w-full flex justify-center py-3 relative'>
+                    <h1 className='text-black font-medium'>ตะกร้าของฉัน</h1>
+                    <button onClick={handleBackPage} className='absolute left-0 inset-y-0'>
+                        <IoIosArrowBack size={18} />
+                    </button>
                 </div>
-                <FooterOrder />
+
+                {/* Container Card */}
+                <div className='w-full py-3'>
+                    <CardOrder />
+                </div>
             </div>
+            <FooterOrder shop={shopDetail}/>
+        </div>
     )
 }
 

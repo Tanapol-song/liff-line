@@ -1,10 +1,7 @@
-export const createFlexMessage = (cart, shop, qrCodeDataURL) => {
+export const createFlexMessage = (cart, shop) => {
     // console.log('cartFlex', cart)
     // console.log("shop", shop)
-    const base64Data = qrCodeDataURL.split(',')[1];
-    const image = atob(base64Data);
 
-    console.log("image", image)
     //send Flex message
     const foodItems = cart.map(order => ({
         "type": "box",

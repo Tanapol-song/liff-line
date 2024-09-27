@@ -54,7 +54,7 @@ const CardOrder = () => {
                                 {item.name}
                             </h3>
                             <button onClick={() => handleDeleteOrder(index)}>
-                                <BsTrash3 className='text-blue-600' />
+                                <BsTrash3 className='text-blue-600'/>
                             </button>
                         </div>
                         <div className='flex items-center justify-between'>

@@ -5,48 +5,18 @@ import { usePathname, useRouter } from 'next/navigation';
 
 import axios from 'axios';
 const FooterCart = ({ shop }) => {
+
     const router = useRouter()
     const pathname = usePathname();
     const { cart, userId } = useSelector((state) => state.user.user)
     const [totalPrice, setTotalPrice] = useState(0)
-    const [isLoading, setIsLoading] = useState(false)
-    const token = `0iukf5QtNSeDbv4BGUy7k47z9OsNixCCDMdoG7Ntq18dtGEy0llO3zaExUevo1uD8i2t2Pbymm6L+LJSe1r8kXbQfFIE97wFfv1YUfDfb3DVm7kyvHIXveaEc9lUz+oWwv58PqSMNq8lUVe6SV0P0gdB04t89/1O/w1cDnyilFU=`
-
+    
     useEffect(() => {
         let total = 0;
         cart?.forEach((item, i) => (total += (item.price * item.total)))
         setTotalPrice(total)
     }, [cart])
 
-
-    const goToLine = async () => {
-        if (isLoading) return;
-        try {
-            setIsLoading(true);
-            const data = {
-                userId: userId, // ต้องเป็น userId ที่ต้องการส่งข้อความถึง
-                token: token,   // ใส่ token ของ LINE API
-                // message: "flexMessage"
-                cart: cart,
-                shop: shop,
-                qrCodeDataURL: qrCodeDataUrl
-            };
-
-            await axios.post('/api/sendMessage', data) // เรียก API Route ใน Next.js
-                .then((res) => {
-                    console.log('res', res);
-                })
-                .catch((err) => {
-                    console.log(err);
-                });
-        } catch (err) {
-            console.log(err);
-        } finally {
-            setIsLoading(false);
-        }
-    };
-
-    console.log('pathname',pathname)
     const handleNextPage = ()=>{
         router.push(`${pathname}/cart`)
     }

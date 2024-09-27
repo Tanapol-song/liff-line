@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react'
 
 import { services } from '@/lib/enums';
 import { IoIosArrowBack } from "react-icons/io";
-import { IoLocation } from "react-icons/io5";
 
 //components
 import CardMenu from '@/app/components/CardMenu';
@@ -26,7 +25,6 @@ const page = ({ params }) => {
         setShopDetail(current)
     }, [shopId])
 
-    // console.log("shopDetail",shopDetail)
     const handleBackPage = () => {
         router.push('/');
     }
@@ -82,7 +80,6 @@ const page = ({ params }) => {
                 </div>
             }
         </div>
-
     )
 }
 

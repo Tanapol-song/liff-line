@@ -3,6 +3,7 @@ import { FaRegClock } from "react-icons/fa6";
 import Link from 'next/link';
 
 const CardShop = ({ detail }) => {
+    // console.log('detail',detail)
     return (
         <Link href={`/s/${detail.num}`} passHref>
             <div className='w-full bg-white p-4 mb-2 rounded-lg border shadow-md transition-transform transform hover:scale-105 duration-300 cursor-pointer'>
