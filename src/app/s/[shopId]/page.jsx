@@ -11,7 +11,7 @@ import FooterCart from '@/app/components/FooterCart';
 import { useRouter } from 'next/navigation';
 import { useSelector } from 'react-redux';
 
-const page = ({ params }) => {
+const ShopPage = ({ params }) => {
     const { shopId } = params;
     const router = useRouter()
     const { cart } = useSelector((state) => state.user.user)
@@ -84,4 +84,4 @@ const page = ({ params }) => {
     )
 }
 
-export default page
+export default ShopPage

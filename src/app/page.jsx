@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux'
 import CardShop from './components/CardShop'
 
 import { services } from '@/lib/enums'
-const page = () => {
+const HomePage = () => {
   const user = useSelector((state => state.user.user))
 
   console.log(user)
@@ -25,4 +25,4 @@ const page = () => {
     </div>
   )
 }
-export default page
+export default HomePage

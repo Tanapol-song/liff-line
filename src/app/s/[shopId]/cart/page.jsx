@@ -13,7 +13,7 @@ import FooterOrder from '@/app/components/FooterOrder';
 //data
 import { services } from '@/lib/enums';
 
-const page = ({ params }) => {
+const OrderPage = ({ params }) => {
     const rounter = useRouter();
     const { shopId } = params;
     const [shopDetail, setShopDetail] = useState(null)
@@ -51,4 +51,4 @@ const page = ({ params }) => {
     )
 }
 
-export default page
+export default OrderPage
