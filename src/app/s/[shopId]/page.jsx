@@ -27,6 +27,7 @@ const page = ({ params }) => {
 
     const handleBackPage = () => {
         router.push('/');
+        router.refresh();
     }
 
     const handleAddOrder = (index) => {
