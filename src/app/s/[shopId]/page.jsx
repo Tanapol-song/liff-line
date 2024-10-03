@@ -9,11 +9,13 @@ import CardMenu from '@/app/components/CardMenu';
 import PopupMenu from '@/app/components/PopupMenu';
 import FooterCart from '@/app/components/FooterCart';
 import { useRouter } from 'next/navigation';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { updateField } from '@/app/redux/slice/userSlice';
 
 const ShopPage = ({ params }) => {
     const { shopId } = params;
-    const router = useRouter()
+    const router = useRouter();
+    const dispatch = useDispatch();
     const { cart } = useSelector((state) => state.user.user)
     const [shopDetail, setShopDetail] = useState(null)
 
@@ -27,7 +29,6 @@ const ShopPage = ({ params }) => {
 
     const handleBackPage = () => {
         router.push('/');
-        router.refresh();
     }
 
     const handleAddOrder = (index) => {
@@ -37,7 +38,7 @@ const ShopPage = ({ params }) => {
             setOnSeletedMenu(isSeletedMenu)
         }
     }
-
+    console.log("cart", cart)
     const handleClosePopup = () => {
         if (isOpen) {
             setOnSeletedMenu(null)
@@ -50,7 +51,7 @@ const ShopPage = ({ params }) => {
             {shopDetail === null ?
                 <p>loading...</p> :
                 <div className='w-full flex flex-col'>
-                    <div className='w-full bg-white shadow-md border-b-2 border-gray-500/30 px-1 py-2'>
+                    <div className='w-full bg-white shadow-md border-b-2 border-gray-500/30 px-1 py-2 rounded-b-xl'>
                         <div className='w-full px-4'>
                             <button onClick={handleBackPage}>
                                 <IoIosArrowBack size={18} />

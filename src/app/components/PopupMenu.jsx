@@ -15,6 +15,7 @@ const PopupMenu = ({ isOpen, onClose, menu }) => {
 
     useEffect(() => {
         setIsOrderCount(0)
+        setDes("")
     }, [isOpen])
     useEffect(() => {
         console.log('cart', cart)

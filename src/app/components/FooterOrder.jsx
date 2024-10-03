@@ -14,6 +14,7 @@ const FooterOrder = ({ shop }) => {
     const [isLoading, setIsLoading] = useState(false)
     const [totalPrice, setTotalPrice] = useState(0)
     const [qrCodeDataUrl, setQrCodeDataUrl] = useState(null)
+
     const promptpay = "0969565976"
     const token = `0iukf5QtNSeDbv4BGUy7k47z9OsNixCCDMdoG7Ntq18dtGEy0llO3zaExUevo1uD8i2t2Pbymm6L+LJSe1r8kXbQfFIE97wFfv1YUfDfb3DVm7kyvHIXveaEc9lUz+oWwv58PqSMNq8lUVe6SV0P0gdB04t89/1O/w1cDnyilFU=`
 
@@ -23,69 +24,44 @@ const FooterOrder = ({ shop }) => {
         setTotalPrice(total)
     }, [cart])
 
-    const goToLine = async () => {
-        if (isLoading) return;
-        try {
-            setIsLoading(true);
-            const data = {
-                userId: userId,
-                token: token,
-
-                // message: "flexMessage"
-                cart: cart,
-                shop: shop,
-            };
-
-            await axios.post('/api/sendMessage', data)
-                .then((res) => {
-                    console.log('res', res);
-                })
-                .catch((err) => {
-                    console.log(err);
-                });
-        } catch (err) {
-            console.log(err);
-        } finally {
-            setIsLoading(false);
-        }
-    };
-
     const generateQrcode = async () => {
         try {
             const data = {
                 phoneNumber: promptpay,
                 amount: totalPrice
             };
-            await axios.post('/api/genarateQrcode', data)
-                .then((res) => {
-                    if (res.status >= 200 && res.status < 300) {
-                        setShowModal(true)
-                        console.log(res.data.qrCodeDataURL)
-                        setQrCodeDataUrl(res.data.qrCodeDataURL)
-                    }
-                })
-                .catch((err) => {
-                    console.log(err)
-                });
-
+            const res = await axios.post('/api/genarateQrcode', data)
+            if (res.status >= 200 && res.status < 300) {
+                setShowModal(true)
+                console.log(res.data.qrCodeDataURL)
+                setQrCodeDataUrl(res.data.qrCodeDataURL)
+            }
         } catch (err) {
             console.log(err)
         }
     }
 
-    const handleProcess = async () => {
-        if (isLoading) return;
+    const goToLine = async () => {
+        if (isLoading) return
         try {
             setIsLoading(true);
-            await goToLine();
-            await generateQrcode();
+            const data = {
+                userId: userId,
+                token: token,
+                cart: cart,
+                shop: shop,
+            };
+            const res = await axios.post('/api/sendMessage', data)
+            if (res.status >= 200 && res.status < 300) {
+                await generateQrcode();
+            }
         } catch (err) {
             console.log(err);
         } finally {
             setIsLoading(false);
         }
     };
-
+   console.log("cart",cart)
     return (
         <Fragment>
             <div className='w-full bg-white fixed bottom-0 py-4 px-4 shadow-black shadow-lg'>
@@ -101,7 +77,7 @@ const FooterOrder = ({ shop }) => {
                     </div>
                     <p className='py-2 text-sm text-orange-700'>โปรดเช็ครายการทั้งหมดก่อน</p>
                     <div className='flex items-center justify-center'>
-                        <button onClick={handleProcess} className='w-full bg-blue-700 rounded-md py-1'>
+                        <button onClick={goToLine} className='w-full bg-blue-700 rounded-md py-1'>
                             <p className='text-white'>ชำระเงิน</p>
                         </button>
                     </div>
