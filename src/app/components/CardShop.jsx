@@ -8,6 +8,7 @@ const CardShop = ({ detail }) => {
     const handleNextPage =()=>{
         router.push(`/s/${detail.num}`)
     }
+    
     return (
             <div onClick={handleNextPage} className='w-full bg-white p-4 mb-2 rounded-lg border shadow-md transition-transform transform hover:scale-105 duration-300 cursor-pointer'>
                 <div className='flex items-center'>

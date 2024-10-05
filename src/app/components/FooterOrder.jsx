@@ -15,8 +15,11 @@ const FooterOrder = ({ shop }) => {
     const [totalPrice, setTotalPrice] = useState(0)
     const [qrCodeDataUrl, setQrCodeDataUrl] = useState(null)
 
-    const promptpay = "0969565976"
-    const token = `0iukf5QtNSeDbv4BGUy7k47z9OsNixCCDMdoG7Ntq18dtGEy0llO3zaExUevo1uD8i2t2Pbymm6L+LJSe1r8kXbQfFIE97wFfv1YUfDfb3DVm7kyvHIXveaEc9lUz+oWwv58PqSMNq8lUVe6SV0P0gdB04t89/1O/w1cDnyilFU=`
+    const promptpay = process.env.NEXT_PUBLIC_NUMBER_PAYMENT;
+    const token = process.env.NEXT_PUBLIC_LINE_CHANNEL_ACCESS_TOKEN;
+
+    console.log("promptpay",promptpay)
+    console.log("token",token)
 
     useEffect(() => {
         let total = 0;
@@ -61,7 +64,7 @@ const FooterOrder = ({ shop }) => {
             setIsLoading(false);
         }
     };
-   console.log("cart",cart)
+    console.log("cart", cart)
     return (
         <Fragment>
             <div className='w-full bg-white fixed bottom-0 py-4 px-4 shadow-black shadow-lg'>

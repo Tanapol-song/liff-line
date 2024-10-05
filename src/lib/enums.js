@@ -389,5 +389,193 @@ export const services = [
             },
         ]
     },
+    {
+        num: '06',
+        imgUrl: 'https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        name: 'ร้านบะหมี่บ้านหมอ',
+        title: 'อาหารตามสั่ง',
+        time: '16:00 - 22:00 น.',
+        detail:
+        {
+            logcation: 'คูณเศษ บ้านโคกพนมดี',
+            tell: '0906786786'
+        },
+        foods: [
+            {
+                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
+                name: 'บะหมี่หมูแดง น้ำใส',
+                price: 60,
+            },
+            {
+                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
+                name: 'เส้นเล็กหมูแดง น้ำใส',
+                price: 60,
+            },
+            {
+                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
+                name: 'หมี่ขาวหมูแดง น้ำใส',
+                price: 60,
+            },
+            {
+                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
+                name: 'เส้นใหญ่หมูแดง น้ำใส',
+                price: 60,
+            },
+            {
+                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
+                name: 'บะหมี่หมูแดง ต้มยำ',
+                price: 65,
+            },
+            {
+                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
+                name: 'เส้นเล็กหมูแดง ต้มยำ',
+                price: 65,
+            },
+            {
+                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
+                name: 'หมี่ขาวหมูแดง ต้มยำ',
+                price: 65,
+            },
+            {
+                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
+                name: 'เส้นใหญ่หมูแดง ต้มยำ',
+                price: 65,
+            },
+            {
+                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
+                name: 'บะหมี่หมูแดง แห้ง',
+                price: 60,
+            },
+            {
+                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
+                name: 'เส้นเล็กหมูแดง แห้ง',
+                price: 60,
+            },
+            {
+                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
+                name: 'หมี่ขาวหมูแดง แห้ง',
+                price: 60,
+            },
+            {
+                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
+                name: 'บะหมี่เย็นตาโฟ',
+                price: 65,
+            },
+            {
+                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
+                name: 'บะหมี่เย็นตาโฟต้มยำ',
+                price: 65,
+            },
+            {
+                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
+                name: 'หมี่ขาวเย็นตาโฟ',
+                price: 65,
+            },
+            {
+                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
+                name: 'หมี่ขาวเย็นตาโฟต้มยำ',
+                price: 65,
+            },
+            {
+                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
+                name: 'เส้นเล็กเย็นตาโฟ',
+                price: 65,
+            },
+            {
+                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
+                name: 'เส้นเล็กเย็นตาโฟต้มยำ',
+                price: 65,
+            },
+            {
+                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
+                name: 'เส้นใหญ่เย็นตาโฟ',
+                price: 65,
+            },
+            {
+                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
+                name: 'เส้นใหญ่เย็นตาโฟต้มยำ',
+                price: 65,
+            },
+            {
+                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
+                name: 'ข้าวหมูแดง',
+                price: 65,
+            },
+            {
+                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
+                name: 'ข้าวหมูกรอบ',
+                price: 65,
+            },
+            {
+                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
+                name: 'ข้าวหมูแดง+หมูกรอบ',
+                price: 75,
+            },
+        ]
+    },
+    {
+        num: '07',
+        imgUrl: 'https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        name: 'ลูกชิ้นทอดbyเจ๊ปาน',
+        title: 'ของทานเล่น',
+        time: '10:00 - 19:00 น.',
+        detail:
+        {
+            logcation: 'หมู่บ้านสระข่อย',
+            tell: '0655507099'
+        },
+        foods: [
+            {
+                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
+                name: 'ลูกชิ้นหมู ไม้ละ',
+                price: 10,
+            },
+            {
+                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
+                name: 'ลูกชิ้นปลานิ่ม ไม้ละ',
+                price: 10,
+            },
+            {
+                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
+                name: 'ลูกชิ้นปลาระเบิด ไม้ละ',
+                price: 10,
+            },
+            {
+                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
+                name: 'ลูกชิ้นเอ็นเนื้อ ไม้ละ',
+                price: 10,
+            },
+            {
+                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
+                name: 'ปูอัดจัมโบ้ ไม้ละ',
+                price: 10,
+            },
+            {
+                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
+                name: 'ไส้กรอกพันเบคอน ไม้ละ',
+                price: 10,
+            },
+            {
+                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
+                name: 'ไส้กรอกชีส ไม้ละ',
+                price: 10,
+            },
+            {
+                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
+                name: 'ไส้กรอกนม ไม้ละ',
+                price: 10,
+            },
+            {
+                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
+                name: 'ป่อเปี๊ยะทอด อันละ',
+                price: 5,
+            },
+            {
+                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
+                name: 'เกี๊ยวไข่นกกระทา ไม้ละ',
+                price: 10,
+            },
+        ]
+    },
 
 ]
