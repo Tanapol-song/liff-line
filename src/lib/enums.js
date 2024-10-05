@@ -4,7 +4,10 @@ export const services = [
         imgUrl: 'https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         name: 'ร้านตาเหน่',
         title: 'อาหารทานเล่น',
-        time: '05.00 - 21.00 น.',
+        time: {
+            open: 5,
+            close:22,
+        },
         detail:
         {
             logcation: '122 ม.7 ตำบลโคกไทย ศรีมโหสถ ปราจีนบุรี',
@@ -28,7 +31,10 @@ export const services = [
         imgUrl: 'https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         name: 'OK HOME',
         title: 'อาหารตามสั่ง',
-        time: '10:00 - 16:00 น.',
+        time: {
+            open: 10,
+            close:16,
+        },
         detail:
         {
             logcation: 'คู้ลำพันฝั่งวัดไผ่ขาด',
@@ -47,7 +53,10 @@ export const services = [
         imgUrl: 'https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         name: 'NB Baby Shop',
         title: 'สิ่งของสำหรับเด็ก',
-        time: '08.00 - 19.30 น.',
+        time: {
+            open: 8,
+            close:19,
+        },
         detail:
         {
             logcation: '281/1 หมู่ 3 เทศบาลตำบลโคกปีบ',
@@ -96,7 +105,10 @@ export const services = [
         imgUrl: 'https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         name: 'เจ้แขกข้าวซอยไก่',
         title: 'อาหารตามสั่ง',
-        time: '08.00 - 19.00 น.',
+        time: {
+            open: 8,
+            close:19,
+        },
         detail:
         {
             logcation: 'เปิดเฉพาะวันเสาร์-อาทิตย์ และวันหยุดนักขัตฤกษ์ ที่อยู่ บ้านสระมะเขือ ซ.8',
@@ -155,7 +167,10 @@ export const services = [
         imgUrl: 'https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         name: 'ตำบักฮุ้ง',
         title: 'อาหารตามสั่ง',
-        time: '10.00 - 20.00 น.',
+        time: {
+            open: 10,
+            close:20,
+        },
         detail:
         {
             logcation: '22/1 หมู่ที่1 ตำบลโคกไทย อำเภอศรีมโหสถ จังหวัดปราจีนบุรี (บ้านสระข่อย)',
@@ -394,7 +409,10 @@ export const services = [
         imgUrl: 'https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         name: 'ร้านบะหมี่บ้านหมอ',
         title: 'อาหารตามสั่ง',
-        time: '16:00 - 22:00 น.',
+        time: {
+            open: 16,
+            close:22,
+        },
         detail:
         {
             logcation: 'คูณเศษ บ้านโคกพนมดี',
@@ -518,7 +536,10 @@ export const services = [
         imgUrl: 'https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         name: 'ลูกชิ้นทอดbyเจ๊ปาน',
         title: 'ของทานเล่น',
-        time: '10:00 - 19:00 น.',
+        time: {
+            open: 10,
+            close:19,
+        },
         detail:
         {
             logcation: 'หมู่บ้านสระข่อย',

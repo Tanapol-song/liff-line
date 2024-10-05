@@ -6,10 +6,14 @@ import CardShop from './components/CardShop'
 import { services } from '@/lib/enums'
 import { updateField } from './redux/slice/userSlice'
 import { usePathname } from 'next/navigation'
+
+
 const HomePage = () => {
   const dispatch = useDispatch();
   const pathName = usePathname();
   const user = useSelector((state => state.user.user))
+  const date = new Date()
+  const timeNow = date.getHours();
 
   useEffect(() => {
     dispatch(updateField(({ field: ['user', 'cart'], payload: [] })))
@@ -30,13 +34,13 @@ const HomePage = () => {
         <div>
           <h1 className='text-lg font-bold my-2'>ร้านอาหารสำหรับคุณ</h1>
           {shuffleArray(services)?.map((item, index) => {
-            return (<CardShop key={index}
-              detail={item}
-            />)
+            const isShopActive = ((timeNow >= item?.time.open) && (timeNow < item?.time.close))
+
+            console.log("index",index)
+            return (isShopActive && <CardShop key={index}detail={item}/>)
           })}
         </div>
       }
-
     </div>
   )
 }

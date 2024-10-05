@@ -21,7 +21,7 @@ const CardShop = ({ detail }) => {
                         <p className='text-sm text-gray-600'>{detail.title}</p>
                         <div className='flex items-center text-gray-500 text-sm mt-2'>
                             <FaRegClock className='mr-1' />
-                            <p>{detail.time}</p>
+                            <p>{`${detail.time.open}.00 - ${detail.time.close}.00 น.`}</p>
                         </div>
                     </div>
                 </div>
