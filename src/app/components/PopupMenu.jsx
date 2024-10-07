@@ -1,7 +1,6 @@
 import { CloudLightning } from 'lucide-react';
 import React, { useEffect, useState } from 'react'
 import { FiMinus, FiPlus } from "react-icons/fi";
-// import { RiArrowDownWideLine } from "react-icons/ri";
 import { IoClose } from "react-icons/io5";
 import { updateField } from '../redux/slice/userSlice';
 import { useDispatch, useSelector } from 'react-redux';
@@ -15,6 +14,7 @@ const PopupMenu = ({ isOpen, onClose, menu }) => {
 
     useEffect(() => {
         setIsOrderCount(0)
+        setDes("")
     }, [isOpen])
     useEffect(() => {
         console.log('cart', cart)

@@ -13,11 +13,11 @@ const CardOrder = () => {
     const rounter = useRouter();
     const { cart, userId } = useSelector((state) => state.user.user)
 
-    useEffect(()=>{
-        if(cart.length <= 0){
+    useEffect(() => {
+        if (cart.length <= 0) {
             rounter.replace('/')
         }
-    },[cart])
+    }, [cart])
 
     const handleAddTotal = (index) => {
         const isorderTotal = cart?.find((_, i) => (i === index))
@@ -54,7 +54,7 @@ const CardOrder = () => {
                                 {item.name}
                             </h3>
                             <button onClick={() => handleDeleteOrder(index)}>
-                                <BsTrash3 className='text-blue-600'/>
+                                <BsTrash3 className='text-red-600' />
                             </button>
                         </div>
                         <div className='flex items-center justify-between'>

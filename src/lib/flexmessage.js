@@ -1,28 +1,43 @@
 export const createFlexMessage = (cart, shop) => {
-    // console.log('cartFlex', cart)
-    // console.log("shop", shop)
-
-    //send Flex message
     const foodItems = cart.map(order => ({
         "type": "box",
-        "layout": "horizontal",
+        "layout": "vertical",
         "contents": [
             {
-                "type": "text",
-                "text": order.name,
-                "size": "sm",
-                "color": "#555555",
-                "flex": 0
+                "type": "box",
+                "layout": "horizontal",
+                "contents": [
+                    {
+                        "type": "text",
+                        "text": order.name,
+                        "size": "sm",
+                        "color": "#555555",
+                        "flex": 0
+                    },
+                    {
+                        "type": "text",
+                        "text": `${order.price * order.total} บาท`,
+                        "size": "sm",
+                        "color": "#111111",
+                        "align": "end"
+                    }
+                ]
             },
+            // {
+            //     "type": "text",
+            //     "text": "รายละเอียดเพิ่มเติม",
+            //     "size": "xs",
+            //     "color": "#397cf1",
+            // },
             {
                 "type": "text",
-                "text": `${order.price * order.total} บาท`,
-                "size": "sm",
-                "color": "#111111",
-                "align": "end"
+                "text": order.des ? order.des : "-",
+                "size": "xs",
+                "color": "#397cf1",
+                "wrap": true
             }
         ]
-    }))
+    }));
 
     const flexMessage = {
         "type": "bubble",
@@ -46,7 +61,7 @@ export const createFlexMessage = (cart, shop) => {
                 },
                 {
                     "type": "text",
-                    "text": shop.detail.logcation, // แก้ไขจาก `logcation` เป็น `location`
+                    "text": shop.detail.logcation,
                     "size": "xs",
                     "color": "#aaaaaa",
                     "wrap": true
@@ -80,13 +95,13 @@ export const createFlexMessage = (cart, shop) => {
                         {
                             "type": "text",
                             "text": "ราคารวม",
-                            "size": "sm",
+                            "size": "md",
                             "color": "#555555"
                         },
                         {
                             "type": "text",
                             "text": `${cart.reduce((sum, item) => sum + (item.price * item.total), 0)} บาท`,
-                            "size": "sm",
+                            "size": "md",
                             "color": "#111111",
                             "align": "end"
                         }
@@ -96,12 +111,41 @@ export const createFlexMessage = (cart, shop) => {
                     "type": "separator",
                     "margin": "xxl"
                 },
-                // {
-                //     "type": "image",
-                //     "url": image, // ใส่ QR Code ในรูปแบบ Data URL
-                //     "size": "full",
-                //     "aspectRatio": "1:1"
-                // },
+                {
+                    "type": "box",
+                    "layout": "vertical",
+                    "margin": "md",
+                    "contents": [
+                        {
+                            "type": "text",
+                            "text": "โปรดชำระเงินตามยอดรายการทั้งหมด",
+                            "size": "sm",
+                            "color": "#555555",
+                            "flex": 0
+                        },
+                        {
+                            "type": "text",
+                            "text": "ธนาคารไทยพาณิช",
+                            "size": "sm",
+                            "color": "#555555",
+                            "flex": 0
+                        },
+                        {
+                            "type": "text",
+                            "text": "เลขบัญชี 417-099-5406 ",
+                            "size": "sm",
+                            "color": "#555555",
+                            "flex": 0
+                        },
+                        {
+                            "type": "text",
+                            "text": "หากชำระเงินแล้วโปรดส่งสลิปให้แอดมิน",
+                            "size": "sm",
+                            "color": "#ff0400",
+                            "flex": 0
+                        },
+                    ]
+                },
                 {
                     "type": "separator",
                     "margin": "xxl"
@@ -113,7 +157,7 @@ export const createFlexMessage = (cart, shop) => {
                     "contents": [
                         {
                             "type": "text",
-                            "text": "ขอบคุณที่ใช้บริการเรา ClickBlike",
+                            "text": "ขอบคุณที่ใช้บริการเรา ClickBike",
                             "size": "xs",
                             "color": "#aaaaaa",
                             "flex": 0
