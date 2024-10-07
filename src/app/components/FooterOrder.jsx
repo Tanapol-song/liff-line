@@ -18,8 +18,8 @@ const FooterOrder = ({ shop }) => {
     const promptpay = process.env.NEXT_PUBLIC_NUMBER_PAYMENT;
     const token = process.env.NEXT_PUBLIC_LINE_CHANNEL_ACCESS_TOKEN;
 
-    console.log("promptpay",promptpay)
-    console.log("token",token)
+    // console.log("promptpay",promptpay)
+    // console.log("token",token)
 
     useEffect(() => {
         let total = 0;

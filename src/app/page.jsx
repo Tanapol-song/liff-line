@@ -35,8 +35,6 @@ const HomePage = () => {
           <h1 className='text-lg font-bold my-2'>ร้านอาหารสำหรับคุณ</h1>
           {shuffleArray(services)?.map((item, index) => {
             const isShopActive = ((timeNow >= item?.time.open) && (timeNow < item?.time.close))
-
-            console.log("index",index)
             return (isShopActive && <CardShop key={index}detail={item}/>)
           })}
         </div>
