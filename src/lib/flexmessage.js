@@ -8,33 +8,44 @@ export const createFlexMessage = (cart, shop) => {
                 "layout": "horizontal",
                 "contents": [
                     {
-                        "type": "text",
-                        "text": order.name,
-                        "size": "sm",
-                        "color": "#555555",
-                        "flex": 0
+                        "type": "box",
+                        "layout": "baseline",
+                        "spacing": "sm",
+                        "contents": [
+                            {
+                                "type": "text",
+                                "text": order.name,
+                                "size": "sm",
+                                "color": "#555555",
+                                "flex": 1
+                            },
+                            {
+                                "type": "text",
+                                "text": `${order.price} บาท`,
+                                "size": "sm",
+                                "color": "#111111",
+                                "flex": 1,
+                                "align": "end"
+                            },
+                        ]
                     },
-                    {
-                        "type": "text",
-                        "text": `${order.price * order.total} บาท`,
-                        "size": "sm",
-                        "color": "#111111",
-                        "align": "end"
-                    }
                 ]
             },
-            // {
-            //     "type": "text",
-            //     "text": "รายละเอียดเพิ่มเติม",
-            //     "size": "xs",
-            //     "color": "#397cf1",
-            // },
+            {
+                "type": "text",
+                "text": `x${order?.total}`,
+                "size": "sm",
+                "color": "#555555",
+                "flex": 1,
+                "align": "end"
+            },
             {
                 "type": "text",
                 "text": order.des ? order.des : "-",
                 "size": "xs",
                 "color": "#397cf1",
-                "wrap": true
+                "wrap": true,
+                "margin": "md"
             }
         ]
     }));

@@ -13,10 +13,8 @@ const LineProvider = ({ children }) => {
             await liff.init({
                 liffId: '2006327247-RMpvpY46',
             })
-            // console.log('login',liff.isLoggedIn())
             if (!liff.isLoggedIn()) {
                 liff.login();
-                // return false;
             }
             const profile = await liff.getProfile();
 

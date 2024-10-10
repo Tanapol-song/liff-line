@@ -548,52 +548,52 @@ export const services = [
         foods: [
             {
                 img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
-                name: 'ลูกชิ้นหมู ไม้ละ',
+                name: 'ลูกชิ้นหมู',
                 price: 10,
             },
             {
                 img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
-                name: 'ลูกชิ้นปลานิ่ม ไม้ละ',
+                name: 'ลูกชิ้นปลานิ่ม',
                 price: 10,
             },
             {
                 img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
-                name: 'ลูกชิ้นปลาระเบิด ไม้ละ',
+                name: 'ลูกชิ้นปลาระเบิด',
                 price: 10,
             },
             {
                 img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
-                name: 'ลูกชิ้นเอ็นเนื้อ ไม้ละ',
+                name: 'ลูกชิ้นเอ็นเนื้อ',
                 price: 10,
             },
             {
                 img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
-                name: 'ปูอัดจัมโบ้ ไม้ละ',
+                name: 'ปูอัดจัมโบ้',
                 price: 10,
             },
             {
                 img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
-                name: 'ไส้กรอกพันเบคอน ไม้ละ',
+                name: 'ไส้กรอกพันเบคอน',
                 price: 10,
             },
             {
                 img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
-                name: 'ไส้กรอกชีส ไม้ละ',
+                name: 'ไส้กรอกชีส',
                 price: 10,
             },
             {
                 img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
-                name: 'ไส้กรอกนม ไม้ละ',
+                name: 'ไส้กรอกนม',
                 price: 10,
             },
             {
                 img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
-                name: 'ป่อเปี๊ยะทอด อันละ',
+                name: 'ป่อเปี๊ยะทอด',
                 price: 5,
             },
             {
                 img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
-                name: 'เกี๊ยวไข่นกกระทา ไม้ละ',
+                name: 'เกี๊ยวไข่นกกระทา',
                 price: 10,
             },
         ]
