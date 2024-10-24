@@ -16,6 +16,14 @@ const LineProvider = ({ children }) => {
             if (!liff.isLoggedIn()) {
                 liff.login();
             }
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition((position) => {
+                    const latitued = position.coords.latitude;
+                    const logitued = position.coords.longitude;
+                    dispatch(updateField(({ field: ['user', 'latitued'], payload: latitued })))
+                    dispatch(updateField(({ field: ['user', 'longitued'], payload: logitued })))
+                })
+            }
             const profile = await liff.getProfile();
 
             dispatch(updateField(({ field: ['user', 'displayName'], payload: profile.displayName })))

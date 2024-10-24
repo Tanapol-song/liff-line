@@ -9,7 +9,7 @@ import axios from 'axios'
 
 const FooterOrder = ({ shop }) => {
     const router = useRouter();
-    const { cart, userId } = useSelector((state) => state.user.user)
+    const { cart, userId, latitued, longitued } = useSelector((state) => state.user.user)
     const [showModal, setShowModal] = useState(false);
     const [isLoading, setIsLoading] = useState(false)
     const [totalPrice, setTotalPrice] = useState(0)
@@ -17,9 +17,6 @@ const FooterOrder = ({ shop }) => {
 
     const promptpay = process.env.NEXT_PUBLIC_NUMBER_PAYMENT;
     const token = process.env.NEXT_PUBLIC_LINE_CHANNEL_ACCESS_TOKEN;
-
-    // console.log("promptpay",promptpay)
-    // console.log("token",token)
 
     useEffect(() => {
         let total = 0;
@@ -48,14 +45,32 @@ const FooterOrder = ({ shop }) => {
         if (isLoading) return
         try {
             setIsLoading(true);
+            const detailShop = {
+                name: shop?.name,
+                detail: {
+                    logcation: shop.detail.logcation,
+                    tell: shop.detail.tell
+                }
+            }
             const data = {
                 userId: userId,
                 token: token,
                 cart: cart,
-                shop: shop,
+                shop: detailShop,
             };
+
+            const sendOrder = {
+                cart: cart,
+                shop: detailShop,
+                latitued: latitued,
+                longitued: longitued
+
+            }
             const res = await axios.post('/api/sendMessage', data)
+            await axios.post('/api/driverMessage', sendOrder)
             if (res.status >= 200 && res.status < 300) {
+                const orderJSON = JSON.stringify(data)
+                localStorage.setItem('unfinishedOrder', orderJSON)
                 await generateQrcode();
             }
         } catch (err) {

@@ -16,7 +16,7 @@ const ShopPage = ({ params }) => {
     const { shopId } = params;
     const router = useRouter();
     const dispatch = useDispatch();
-    const { cart } = useSelector((state) => state.user.user)
+    const { cart, latitued, longitued } = useSelector((state) => state.user.user)
     const [shopDetail, setShopDetail] = useState(null)
 
     const [isOpen, setIsOpen] = useState(false)
@@ -39,6 +39,8 @@ const ShopPage = ({ params }) => {
         }
     }
     console.log("cart", cart)
+    console.log("latitued", latitued)
+    console.log("longitued",longitued)
     const handleClosePopup = () => {
         if (isOpen) {
             setOnSeletedMenu(null)
