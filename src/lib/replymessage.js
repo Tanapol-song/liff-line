@@ -47,7 +47,7 @@ export const createReplyMessage = (userMessage, replyToken) => {
                             "action": {
                                 "type": "uri",
                                 "label": "ดูเมนู",
-                                "uri": `https://b3d1-101-109-28-182.ngrok-free.app/s/${shop?.num}`
+                                "uri": `https://liff-line.vercel.app/s/${shop?.num}`
                             }
                         }
                     ]
