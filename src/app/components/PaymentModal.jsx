@@ -8,7 +8,7 @@ const PaymentModal = ({ isVisible, isQrcodeUrl }) => {
         liff.closeWindow();
     }
     return (
-        <div className='fixed inset-0 bg-black bg-opacity-10 backdrop-blur-[2px] flex items-center justify-center'>
+        <div className='fixed inset-0 bg-black bg-opacity-10 flex items-center justify-center'>
             <div className='w-full flex flex-col px-6'>
                 <div className='flex flex-col bg-white drop-shadow-md items-center justify-center py-2 gap-y-2 rounded-md'>
                     <p>โปรดสแกน Qrcode เพื่อชำระเงิน</p>

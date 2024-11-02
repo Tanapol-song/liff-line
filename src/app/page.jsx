@@ -26,7 +26,6 @@ const HomePage = () => {
     }
     return array;
   };
-
   return (
     <div className='container px-4'>
       {user?.userId === null ?

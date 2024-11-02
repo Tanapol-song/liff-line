@@ -6,8 +6,6 @@ import { createFlexMessage } from '@/lib/flexmessage';
 export async function POST(request) {
     try {
         const { userId, token, cart, shop } = await request.json();
-
-        // สร้าง Flex Message
         const flexMessage = createFlexMessage(cart, shop);
 
         const data = {

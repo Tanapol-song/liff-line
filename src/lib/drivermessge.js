@@ -1,4 +1,4 @@
-export const createFlexMessage = (cart, shop) => {
+export const createDriverMessage = (cart, shop) => {
     const foodItems = cart.map(order => ({
         "type": "box",
         "layout": "vertical",
@@ -129,28 +129,21 @@ export const createFlexMessage = (cart, shop) => {
                     "contents": [
                         {
                             "type": "text",
-                            "text": "โปรดชำระเงินตามยอดรายการทั้งหมด",
+                            "text": "รอการยันยืนการชำระเงินจากลูกค้า",
                             "size": "sm",
                             "color": "#555555",
                             "flex": 0
                         },
                         {
                             "type": "text",
-                            "text": "ธนาคารไทยพาณิช",
+                            "text": "โปรดรอการยืนยันชำระเงินจากแอดมิน",
                             "size": "sm",
-                            "color": "#555555",
+                            "color": "#ff0400",
                             "flex": 0
                         },
                         {
                             "type": "text",
-                            "text": "เลขบัญชี 417-099-5406 ",
-                            "size": "sm",
-                            "color": "#555555",
-                            "flex": 0
-                        },
-                        {
-                            "type": "text",
-                            "text": "หากชำระเงินแล้วโปรดส่งสลิปให้แอดมิน",
+                            "text": "ให้กับพี่ไรเดอร์ โปรดรออีกนิด",
                             "size": "sm",
                             "color": "#ff0400",
                             "flex": 0

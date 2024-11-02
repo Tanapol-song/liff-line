@@ -1,39 +1,147 @@
 export const services = [
     {
         num: '01',
-        imgUrl: 'https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        name: 'ร้านตาเหน่',
-        title: 'อาหารทานเล่น',
+        name: 'ร้านสุกี้ชามโตนะครับ',
+        title: 'อาหารตามสั่ง',
         time: {
-            open: 5,
-            close:22,
+            open: 8,
+            close: 17,
         },
         detail:
         {
-            logcation: '122 ม.7 ตำบลโคกไทย ศรีมโหสถ ปราจีนบุรี',
-            tell: '0953973579'
+            logcation: 'บ้านเลยที่ 216 หมู่ 1 ตำบลโคกไทยอำเภอศรีมโหสถ จังหวัดปราจีนบุรี',
+            tell: '0639325519 & 0928161322'
         },
         foods: [
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
-                name: 'มะม่วงดอง',
-                price: 20,
+                name: 'สุกี้น้ำ หมู',
+                price: 60,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
-                name: 'มะม่วงแช่อิ่ม',
-                price: 20,
-            },  
+                name: 'สุกี้น้ำ ไก่',
+                price: 60,
+            },
+            {
+                name: 'สุกี้แห้ง หมู',
+                price: 60,
+            },
+            {
+                name: 'สุกี้แห้ง ไก่',
+                price: 60,
+            },
+            {
+                name: 'สุกี้น้ำ รวมมิตร',
+                price: 65,
+            },
+            {
+                name: 'สุกี้แห้ง รวมมิตร',
+                price: 65,
+            },
+            {
+                name: 'สุกี้น้ำ ทะเล',
+                price: 70,
+            },
+            {
+                name: 'สุกี้แห้ง ทะเล',
+                price: 70,
+            },
+            {
+                name: 'สุกี้น้ำ เนื้อ',
+                price: 70,
+            },
+            {
+                name: 'สุกี้แห้ง เนื้อ',
+                price: 70,
+            },
+            {
+                name: 'เย็นตาโฟ',
+                price: 50,
+            },
+            {
+                name: 'ต้มยำเย็นตาโฟ',
+                price: 50,
+            },
+            {
+                name: 'ต้มยำไข่',
+                price: 60,
+            },
+            {
+                name: 'ต้มเลือดหมู',
+                price: 50,
+            },
+            {
+                name: 'กระเพราหมูสับ/หมูชิ้น',
+                price: 40,
+            },
+            {
+                name: 'กระเพราไก่สับ/ไก่ชิ้น',
+                price: 40,
+            },
+            {
+                name: 'กระเพราหมูกรอบ',
+                price: 50,
+            },
+            {
+                name: 'กระเพรารวมมิตร',
+                price: 50,
+            },
+            {
+                name: 'กระเพราทะเล',
+                price: 60,
+            },
+            {
+                name: 'กระเพราเนื้อสด/เนื้อเปื่อย',
+                price: 60,
+            },
+            {
+                name: 'ข้าวผัดหมู',
+                price: 50,
+            },
+            {
+                name: 'ข้าวผัดไก่',
+                price: 50,
+            },
+            {
+                name: 'ข้าวผัดรวมมิตร',
+                price: 60,
+            },
+            {
+                name: 'ข้าวผัดทะเล',
+                price: 60,
+            },
+            {
+                name: 'พริกแกงหมูสับ/หมูชิ้น',
+                price: 40,
+            },
+            {
+                name: 'พริกแกงไก่สับ/ไก่ชิ้น',
+                price: 40,
+            },
+            {
+                name: 'พริกแกงหมูกรอบ',
+                price: 50,
+            },
+            {
+                name: 'พริกแกงรวมมิตร',
+                price: 50,
+            },
+            {
+                name: 'พริกแกงทะเล',
+                price: 60,
+            },
+            {
+                name: 'พริกแกงเนื้อสด/เนื้อเปื่อย',
+                price: 60,
+            },
         ]
     },
     {
         num: '02',
-        imgUrl: 'https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         name: 'OK HOME',
         title: 'อาหารตามสั่ง',
         time: {
             open: 10,
-            close:16,
+            close: 16,
         },
         detail:
         {
@@ -42,7 +150,6 @@ export const services = [
         },
         foods: [
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'ข้าวไรซ์เบอร์รี่คั่วกลิ้งหมู + ไข่ต้ม',
                 price: 75,
             },
@@ -50,12 +157,11 @@ export const services = [
     },
     {
         num: '03',
-        imgUrl: 'https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         name: 'NB Baby Shop',
         title: 'สิ่งของสำหรับเด็ก',
         time: {
             open: 8,
-            close:19,
+            close: 19,
         },
         detail:
         {
@@ -64,37 +170,30 @@ export const services = [
         },
         foods: [
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'นมโฟรโมสต์รสจืดลัง',
                 price: 345,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'นมหมีน้ำผึ้งลัง',
                 price: 424,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'นมหมีรสจืดลัง',
                 price: 424,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'นมเอส 26 uht ลัง',
                 price: 570,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'นมคาร์เนชั่น uht ลัง',
                 price: 339,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'ไฮคิว ซุปเปอร์โกลด์ลัง',
                 price: 635,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'นมเอนฟา Superior ลัง',
                 price: 495,
             },
@@ -102,12 +201,11 @@ export const services = [
     },
     {
         num: '04',
-        imgUrl: 'https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         name: 'เจ้แขกข้าวซอยไก่',
         title: 'อาหารตามสั่ง',
         time: {
             open: 8,
-            close:19,
+            close: 19,
         },
         detail:
         {
@@ -116,47 +214,38 @@ export const services = [
         },
         foods: [
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'ข้าวซอยไก่',
                 price: 60,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'ขนมจีนน้ำเงี้ยว',
                 price: 50,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'ลาบหมูคั่ว',
                 price: 60,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'น้ำพริกหนุ่ม',
                 price: 40,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'น้ำพริกอ่อง',
                 price: 40,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'แคปหมูคีโต',
                 price: 40,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'ก๋วยจั๊บญวน',
                 price: 50,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'หมี่กะทิ',
                 price: 50,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'ผักสด',
                 price: 30,
             },
@@ -164,12 +253,11 @@ export const services = [
     },
     {
         num: '05',
-        imgUrl: 'https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         name: 'ตำบักฮุ้ง',
         title: 'อาหารตามสั่ง',
         time: {
             open: 10,
-            close:20,
+            close: 20,
         },
         detail:
         {
@@ -178,227 +266,182 @@ export const services = [
         },
         foods: [
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'ตำกุ้งสด',
                 price: 60,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'ตำขนมจีนหมูยอ',
                 price: 50,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'ตำข้าวโพดไข่เค็มกุ้งสด',
                 price: 80,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'ตำซั่วแตง',
                 price: 50,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'ตำซั่ว',
                 price: 50,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'ตำซั่วหน่อไม้กุ้งสด',
                 price: 70,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'ตำซั่วหมูยอ',
                 price: 60,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'ตำแตง',
                 price: 40,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'ตำถั่วคอหมูย่าง',
                 price: 80,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'ตำคอหมูย่าง',
                 price: 80,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'ตำข้าวโพดคอหมูย่าง',
                 price: 90,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'ตำซั่วแตงคอหมูย่าง',
                 price: 90,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'ตำซั่วคอหมูย่าง',
                 price: 90,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'ตำขนมจีนคอหมูย่าง',
                 price: 80,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'ตำถั่ว',
                 price: 40,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'ตำไทยปู',
                 price: 50,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'ตำไทยปูไข่เค็ม',
                 price: 60,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'ตำปูปลาร้า',
                 price: 40,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'ตำโคราช',
                 price: 50,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'ตำหน่อไม้กุ้งสด',
                 price: 60,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'ตำป่า',
                 price: 60,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'ตำไหลบัวกุ้งสด',
                 price: 60,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'ตำข้าวโพดไข่เค็ม',
                 price: 60,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'ตำเส้นเล็ก',
                 price: 50,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'ตำปูม้า',
                 price: 70,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'ตำหอยแครง',
                 price: 80,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'เหลาปูม้ากุ้งสดหอยแครง',
                 price: 120,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'ตำถาด',
                 price: 100,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'ตำตีนไก่',
                 price: 50,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'ตำหอยดอง',
                 price: 50,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'ปีกไก่ย่าง',
                 price: 20,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'คอหมูย่าง',
                 price: 50,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'ปลาดุกย่าง',
                 price: 40,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'หนังไก่ย่าง',
                 price: 10,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'น้ำตกคอหมูย่าง',
                 price: 60,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'ลาบปลาดุก',
                 price: 50,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'ซุปหน่อไม้',
                 price: 40,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'ลาบหมู',
                 price: 60,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'ตับหวาน',
                 price: 50,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'ยำหนังหมู',
                 price: 50,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'ต้มแซ่บเครื่องในหมู',
                 price: 60,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'แคปหมู',
                 price: 25,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'ข้าวสวย',
                 price: 10,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'ข้าวเหนียว',
                 price: 10,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'ขนมจีน',
                 price: 10,
             },
@@ -406,12 +449,11 @@ export const services = [
     },
     {
         num: '06',
-        imgUrl: 'https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         name: 'ร้านบะหมี่บ้านหมอ',
         title: 'อาหารตามสั่ง',
         time: {
             open: 16,
-            close:22,
+            close: 22,
         },
         detail:
         {
@@ -420,112 +462,90 @@ export const services = [
         },
         foods: [
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'บะหมี่หมูแดง น้ำใส',
                 price: 60,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'เส้นเล็กหมูแดง น้ำใส',
                 price: 60,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'หมี่ขาวหมูแดง น้ำใส',
                 price: 60,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'เส้นใหญ่หมูแดง น้ำใส',
                 price: 60,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
-                name: 'บะหมี่หมูแดง ต้มยำ',
+               name: 'บะหมี่หมูแดง ต้มยำ',
                 price: 65,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'เส้นเล็กหมูแดง ต้มยำ',
                 price: 65,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'หมี่ขาวหมูแดง ต้มยำ',
                 price: 65,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'เส้นใหญ่หมูแดง ต้มยำ',
                 price: 65,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'บะหมี่หมูแดง แห้ง',
                 price: 60,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
-                name: 'เส้นเล็กหมูแดง แห้ง',
+                    name: 'เส้นเล็กหมูแดง แห้ง',
                 price: 60,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'หมี่ขาวหมูแดง แห้ง',
                 price: 60,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'บะหมี่เย็นตาโฟ',
                 price: 65,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'บะหมี่เย็นตาโฟต้มยำ',
                 price: 65,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'หมี่ขาวเย็นตาโฟ',
                 price: 65,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'หมี่ขาวเย็นตาโฟต้มยำ',
                 price: 65,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'เส้นเล็กเย็นตาโฟ',
                 price: 65,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'เส้นเล็กเย็นตาโฟต้มยำ',
                 price: 65,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'เส้นใหญ่เย็นตาโฟ',
                 price: 65,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'เส้นใหญ่เย็นตาโฟต้มยำ',
                 price: 65,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'ข้าวหมูแดง',
                 price: 65,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'ข้าวหมูกรอบ',
                 price: 65,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
                 name: 'ข้าวหมูแดง+หมูกรอบ',
                 price: 75,
             },
@@ -533,12 +553,11 @@ export const services = [
     },
     {
         num: '07',
-        imgUrl: 'https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         name: 'ลูกชิ้นทอดbyเจ๊ปาน',
         title: 'ของทานเล่น',
         time: {
             open: 10,
-            close:19,
+            close: 19,
         },
         detail:
         {
@@ -547,56 +566,549 @@ export const services = [
         },
         foods: [
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
-                name: 'ลูกชิ้นหมู ไม้ละ',
+                name: 'ลูกชิ้นหมู',
                 price: 10,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
-                name: 'ลูกชิ้นปลานิ่ม ไม้ละ',
+                name: 'ลูกชิ้นปลานิ่ม',
                 price: 10,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
-                name: 'ลูกชิ้นปลาระเบิด ไม้ละ',
+                name: 'ลูกชิ้นปลาระเบิด',
                 price: 10,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
-                name: 'ลูกชิ้นเอ็นเนื้อ ไม้ละ',
+                name: 'ลูกชิ้นเอ็นเนื้อ',
                 price: 10,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
-                name: 'ปูอัดจัมโบ้ ไม้ละ',
+               name: 'ปูอัดจัมโบ้',
                 price: 10,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
-                name: 'ไส้กรอกพันเบคอน ไม้ละ',
+                name: 'ไส้กรอกพันเบคอน',
                 price: 10,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
-                name: 'ไส้กรอกชีส ไม้ละ',
+                name: 'ไส้กรอกชีส',
                 price: 10,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
-                name: 'ไส้กรอกนม ไม้ละ',
+                name: 'ไส้กรอกนม',
                 price: 10,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
-                name: 'ป่อเปี๊ยะทอด อันละ',
+                name: 'ป่อเปี๊ยะทอด',
                 price: 5,
             },
             {
-                img: 'https://fastly.picsum.photos/id/881/50/50.jpg?hmac=iMzPDZ0cUbWm7IceSM9MxroA3ddMrMtcgCCv16t2Yzw',
-                name: 'เกี๊ยวไข่นกกระทา ไม้ละ',
+                name: 'เกี๊ยวไข่นกกระทา',
                 price: 10,
             },
         ]
     },
-
+    {
+        num: '08',
+        name: 'ร้านลาบร้อยเอ็ด',
+        title: 'อาหารอิสาน',
+        time: {
+            open: 10,
+            close: 21,
+        },
+        detail:
+        {
+            logcation: 'บ้านเลขที่ 17/1 หมู่ 1 ตำบล โคกไทย อำเภอ ศรีมโหสถ จังหวัดปราจีนบุรี',
+            tell: '0981255618'
+        },
+        foods: [
+            {
+                name: 'ก้อยขม',
+                price: 70,
+            },
+            {
+                name: 'ต้มแซ่บเนื้อ',
+                price: 70,
+            },
+            {
+                name: 'ต้มแซ่บหมู',
+                price: 70,
+            },
+            {
+                name: 'ต้มแซ่บหมูสด',
+                price: 80,
+            },
+            {
+                name: 'น้ำตกเนื้อ',
+                price: 70,
+            },
+            {
+                name: 'น้ำตกหมู',
+                price: 70,
+            },
+            {
+                name: 'ลาบเนื้อสุก',
+                price: 70,
+            },
+            {
+                name: 'ลาบหมู',
+                price: 70,
+            },
+            {
+                name: 'ลาดเป็ด',
+                price: 70,
+            },
+            {
+                name: 'ก้อยหมูมะนาวดิบ',
+                price: 70,
+            },
+            {
+                name: 'ลวกจิ้มเนื้อ',
+                price: 90,
+            },
+            {
+                name: 'ลวกจิ้มหมู',
+                price: 90,
+            },
+            {
+                name: 'ต้มแซ่บกระดูกอ่อน',
+                price: 80,
+            },
+            {
+                name: 'ต้มแห้งเครื่องในเนื้อ',
+                price: 90,
+            },
+            {
+                name: 'ต้มแห้งเครื่องในหมู',
+                price: 90,
+            },
+            {
+                name: 'ยำผ้าขี้ริ้ว',
+                price: 80,
+            },
+            {
+                name: 'ตับหวานเนื้อ',
+                price: 80,
+            },
+            {
+                name: 'ตับหวานหมู',
+                price: 80,
+            },
+            {
+                name: 'ซอยจุ๊รวมเนื้อ',
+                price: 90,
+            },
+            {
+                name: 'ย่างเสื้อร้องไห้',
+                price: 110,
+            },
+            {
+                name: 'ย่างเนื้อหมู',
+                price: 110,
+            },
+            {
+                name: 'ย่างราวนมเนื้อ',
+                price: 110,
+            },
+            {
+                name: 'ย่างเนื้อ',
+                price: 110,
+            },
+            {
+                name: 'ย่างลิ้นหมู',
+                price: 110,
+            },
+            {
+                name: 'ย่างลิ้นเนื้อ',
+                price: 110,
+            },
+            {
+                name: 'ตำรวมทะเล',
+                price: 90,
+            },
+            {
+                name: 'ตำกุ้งสด',
+                price: 80,
+            },
+            {
+                name: 'ตำป่า',
+                price: 60,
+            },
+            {
+                name: 'ตำหมูยอ',
+                price: 60,
+            },
+            {
+                name: 'ตำหอยดอง',
+                price: 60,
+            },
+            {
+                name: 'ตำซั่วขนมจีน',
+                price: 60,
+            },
+            {
+                name: 'ตำถั่วฝักยาว',
+                price: 60,
+            },
+            {
+                name: 'ตำแตง',
+                price: 50,
+            },
+            {
+                name: 'ตำปูปลาร้า',
+                price: 50,
+            },
+            {
+                name: 'ตำไทย',
+                price: 50,
+            },
+            {
+                name: 'ตำปู',
+                price: 50,
+            },
+            {
+                name: 'ตำไทย-ปู',
+                price: 50,
+            },
+            {
+                name: 'ตำลาว',
+                price: 50,
+            },
+            {
+                name: 'ต้มยำรวมทะเล',
+                price: 90,
+            },
+            {
+                name: 'ยำรวมทะเล',
+                price: 90,
+            },
+            {
+                name: 'ยำปลาหมึก',
+                price: 90,
+            },
+            {
+                name: 'ยำกุ้งสด',
+                price: 90,
+            },
+            {
+                name: 'ยำวุ้นเส้น',
+                price: 70,
+            },
+            {
+                name: 'ยำตีนไก่',
+                price: 90,
+            },
+            {
+                name: 'ยำหมูยอ',
+                price: 70,
+            },
+        ]
+    },
+    {
+        num: '09',
+        name: 'ร้านก๋วยเตี๋ยวไก่กระเทย',
+        title: 'ก๋วยเตี๋ยว',
+        time: {
+            open: 8,
+            close: 14,
+        },
+        detail:
+        {
+            logcation: 'บ้านเลขที่ 17 หมู่ 1 ตำบลโคกไทย อำเภอศรีมโหสถ จังหวัดปราจีนบุรี',
+            tell: '0892326462'
+        },
+        foods: [
+            {
+                name: 'ก๋วยเตี๋ยวไก่ธรรมดา',
+                price: 60,
+            },
+            {
+                name: 'ก๋วยเตี๋ยวไก่กระเทยพิเศษ',
+                price: 70,
+            },
+            {
+                name: 'ข้าวขาหมู',
+                price: 60,
+            },
+            {
+                name: 'สุกี้หมู',
+                price: 60,
+            },
+            {
+                name: 'สุกี้รวม',
+                price: 70,
+            },
+            {
+                name: 'สุกี้ทะเล',
+                price: 70,
+            },
+            {
+                name: 'ข้าวม่าวทอด',
+                price: 45,
+            },
+            {
+                name: 'กล้วยทอด',
+                price: 30,
+            },
+        ]
+    },
+    {
+        num: '10',
+        name: 'ร้านเฮ็ดเป็ด สเตชั่น',
+        title: 'อาหาร',
+        time: {
+            open: 8,
+            close: 14,
+        },
+        detail:
+        {
+            logcation: 'บ้านเลขที่ 135 หมู่ 1 ตำบลโคกไทย อำเภอศรีมโหสถ จังหวัดปราจีนบุรี',
+            tell: '0867891092 & 0885557893'
+        },
+        foods: [
+            {
+                name: 'เป็ดย่างตัว',
+                price: 560,
+            },
+            {
+                name: 'เป็ดย่างครึ่งตัว',
+                price: 290,
+            },
+            {
+                name: 'หมี่หยก',
+                price: 25,
+            },
+            {
+                name: 'หมี่หยกเป็ด',
+                price: 60,
+            },
+            {
+                name: 'หมี่หยกเป็ด พิเศษ',
+                price: 70,
+            },
+            {
+                name: 'ข้าวหน้าเป็ด',
+                price: 60,
+            },
+            {
+                name: 'ข้าวหน้าเป็ด พิเศษ',
+                price: 70,
+            },
+            {
+                name: 'ข้าวหน้าหมูกรอบ',
+                price: 70,
+            },
+            {
+                name: 'ข้าวหน้าหมูกรอบ พิเศษ',
+                price: 80,
+            },
+            {
+                name: 'ข้าวหน้าหมูกรอบ + เป็ดย่าง',
+                price: 80,
+            },
+            {
+                name: 'ก๋วยเตี๋ยวเป็ดพะโล้',
+                price: 60,
+            },
+            {
+                name: 'ก๋วยเตี๋ยวเป็ดพะโล้ พิเศษ',
+                price: 70,
+            },
+        ]
+    },
+    {
+        num: '11',
+        name: 'ก๋วยเตี๋ยวป้าปู',
+        title: 'ก๋วยเตี๋ยว',
+        time: {
+            open: 10,
+            close: 19,
+        },
+        detail:
+        {
+            logcation: 'บ้านเลขที่ 235/1 หมู่ 4 ตำบลโคกปีบ อำเภอศรีมโหสถ จังหวัดปราจีนบุรี',
+            tell: '0806587983 & 0655298267'
+        },
+        foods: [
+            {
+                name: 'เกาเหลารวมหมู',
+                price: 60,
+            },
+            {
+                name: 'เกาเหลารวมเนื้อ',
+                price: 60,
+            },
+            {
+                name: 'เส้นเล็กหมูน้ำตก',
+                price: 45,
+            },
+            {
+                name: 'เส้นหมี่ขาวหมูน้ำตก',
+                price: 45,
+            },
+            {
+                name: 'เส้นหมี่เหลืองหมูน้ำตก',
+                price: 45,
+            },
+            {
+                name: 'เส้นใหญ่หมูน้ำตก',
+                price: 45,
+            },
+            {
+                name: 'เส้นเล็กหมูน้ำใส',
+                price: 45,
+            },
+            {
+                name: 'เส้นหมี่ขาวหมูน้ำใส',
+                price: 45,
+            },
+            {
+                name: 'เส้นหมี่เหลืองหมูน้ำใส',
+                price: 45,
+            },
+            {
+                name: 'เส้นใหญ่หมูน้ำใส',
+                price: 45,
+            },
+            {
+                name: 'เส้นเล็กเนื้อน้ำตก',
+                price: 50,
+            },
+            {
+                name: 'เส้นหมี่ขาวเนื้อน้ำตก',
+                price: 50,
+            },
+            {
+                name: 'เส้นหมี่เหลืองเนื้อน้ำตก',
+                price: 50,
+            },
+            {
+                name: 'เส้นใหญ่เนื้อน้ำตก',
+                price: 50,
+            },
+            {
+                name: 'เส้นเล็กเนื้อเปื่อยน้ำตก',
+                price: 50,
+            },
+            {
+                name: 'เส้นหมี่ขาวเนื้อเปื่อยน้ำตก',
+                price: 50,
+            },
+            {
+                name: 'เส้นหมี่เหลืองเนื้อเปื่อยน้ำตก',
+                price: 50,
+            },
+            {
+                name: 'เส้นใหญ่เนื้อเปื่อยน้ำตก',
+                price: 50,
+            },
+            {
+                name: 'เส้นเล็กเนื้อน้ำใส',
+                price: 50,
+            },
+            {
+                name: 'เส้นหมี่ขาวเนื้อน้ำใส',
+                price: 50,
+            },
+            {
+                name: 'เส้นหมี่เหลืองเนื้อน้ำใส',
+                price: 50,
+            },
+            {
+                name: 'เส้นใหญ่เนื้อน้ำใส',
+                price: 50,
+            },
+        ]
+    },
+    {
+        num: '12',
+        name: 'ป้าตาอาหารตามสั่ง',
+        title: 'อาหารตามสั่ง',
+        time: {
+            open: 10,
+            close: 21,
+        },
+        detail:
+        {
+            logcation: 'บ้านเลขที่ 235/1 หมู่ 4 ตำบลโคกปีบ อำเภอศรีมโหสถ จังหวัดปราจีนบุรี',
+            tell: '0656979097'
+        },
+        foods: [
+            {
+                name: 'ลาบหมู',
+                price: 50,
+            },
+            {
+                name: 'ลาบเนื้อ',
+                price: 60,
+            },
+            {
+                name: 'น้ำตกหมู',
+                price: 60,
+            },
+            {
+                name: 'น้ำตกเนื้อ',
+                price: 60,
+            },
+            {
+                name: 'ต้มแซ่บหมู',
+                price: 60,
+            },
+            {
+                name: 'ต้มแซ่บเนื้อ',
+                price: 70,
+            },
+            {
+                name: 'ผัดซีอิ๋ว',
+                price: 60,
+            },
+            {
+                name: 'ข้าวไข่เจียว',
+                price: 60,
+            },
+            {
+                name: 'หมูทอดกระเทียม',
+                price: 60,
+            },
+            {
+                name: 'ข้าวผัดหมู',
+                price: 60,
+            },
+            {
+                name: 'ข้าวผัดกุ้ง',
+                price: 60,
+            },
+            {
+                name: 'ข้าวผัดทะเล',
+                price: 60,
+            },
+            {
+                name: 'ผัดกระเพราหมู',
+                price: 60,
+            },
+            {
+                name: 'ผัดกระเพราเนื้อ',
+                price: 60,
+            },
+            {
+                name: 'ผัดกระเพราไก่',
+                price: 60,
+            },
+            {
+                name: 'ต้มยำรวมมิตร',
+                price: 60,
+            },
+            {
+                name: 'โจ๊กธรรมดา',
+                price: 35,
+            },
+            {
+                name: 'โจ๊กพิเศษ',
+                price: 40,
+            },
+            {
+                name: 'ต้มเลือดหมู',
+                price: 40,
+            },
+        ]
+    },
 ]
