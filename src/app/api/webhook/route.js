@@ -19,8 +19,11 @@ export async function POST(req) {
     try {
         const tokenPublic = process.env.NEXT_PUBLIC_LINE_CHANNEL_ACCESS_TOKEN
         const tokenAdmin = process.env.NEXT_PUBLIC_LINE_TWO_CHANNEL_ACCESS_TOKEN
-        const userDriver = process.env.NEXT_PUBLIC_USERID_ADMIN
+        const userDriver = process.env.NEXT_PUBLIC_USERID_DRIVE
+        const userOderAdmin = process.env.NEXT_PUBLIC_USERID_ADMIN
         const userAdmin_1 = process.env.NEXT_PUBLIC_USERID_ADMIN_1
+        const userAdmin_2 = process.env.NEXT_PUBLIC_USERID_ADMIN_2
+
         const Url = process.env.NEXT_PUBLIC_BASE_URL
 
         const body = await req.json();
@@ -45,9 +48,16 @@ export async function POST(req) {
             });
         }
         if (userMessage == 'ok') {
-            if ((userAdmin_1) || (userDriver)) {
+            if ((userOderAdmin) || (userAdmin_1) || (userAdmin_2)) {
                 const message = {
                     "to": userDriver,
+                    "messages": [
+                        {
+                            "type": "text",
+                            "text": `📢 ลูกค้าชำระเงินเรียบร้อย!\n🕐 ${timestamp}`,
+                        },
+                    ],
+                    "to": userOderAdmin,
                     "messages": [
                         {
                             "type": "text",
