@@ -136,14 +136,14 @@ export const createFlexMessage = (cart, shop) => {
                         },
                         {
                             "type": "text",
-                            "text": "ธนาคารไทยพาณิช",
+                            "text": "ธนาคารกสิกรไทย",
                             "size": "sm",
                             "color": "#555555",
                             "flex": 0
                         },
                         {
                             "type": "text",
-                            "text": "เลขบัญชี 417-099-5406 ",
+                            "text": "เลขบัญชี 041-160-5221 ",
                             "size": "sm",
                             "color": "#555555",
                             "flex": 0
