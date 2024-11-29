@@ -15,7 +15,7 @@ const FooterOrder = ({ shop }) => {
     const [totalPrice, setTotalPrice] = useState(0)
     const [qrCodeDataUrl, setQrCodeDataUrl] = useState(null)
 
-    const promptpay = process.env.NEXT_PUBLIC_NUMBER_PAYMEN;
+    const promptpay = process.env.NEXT_PUBLIC_NUMBER_PAYMENT;
     const token = process.env.NEXT_PUBLIC_LINE_CHANNEL_ACCESS_TOKEN;
 
     useEffect(() => {
@@ -67,10 +67,10 @@ const FooterOrder = ({ shop }) => {
 
             }
             const res = await axios.post('/api/sendMessage', data)
-            await axios.post('/api/driverMessage', sendOrder)
             if (res.status >= 200 && res.status < 300) {
                 const orderJSON = JSON.stringify(data)
                 localStorage.setItem('unfinishedOrder', orderJSON)
+                await axios.post('/api/driverMessage', sendOrder)
                 await generateQrcode();
             }
         } catch (err) {
