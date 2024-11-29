@@ -15,7 +15,7 @@ const FooterOrder = ({ shop }) => {
     const [totalPrice, setTotalPrice] = useState(0)
     const [qrCodeDataUrl, setQrCodeDataUrl] = useState(null)
 
-    const promptpay = process.env.NEXT_PUBLIC_NUMBER_PAYMENT;
+    const promptpay = process.env.NEXT_PUBLIC_NUMBER_PAYMEN;
     const token = process.env.NEXT_PUBLIC_LINE_CHANNEL_ACCESS_TOKEN;
 
     useEffect(() => {
