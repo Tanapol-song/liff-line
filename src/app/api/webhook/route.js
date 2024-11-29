@@ -50,29 +50,8 @@ export async function POST(req) {
         }
         if (userMessage == 'ok') {
             if ((userOderAdmin) || (userAdmin_1) || (userAdmin_2)) {
-                const message = {
-                    "to": userOderAdmin,
-                    "messages": [
-                        {
-                            "type": "text",
-                            "text": `📢 ลูกค้าชำระเงินเรียบร้อย!\n🕐 ${timestamp}`,
-                        },
-                    ],
-                    "to": userDriver_1,
-                    "messages": [
-                        {
-                            "type": "text",
-                            "text": `📢 ลูกค้าชำระเงินเรียบร้อย!\n🕐 ${timestamp}`,
-                        },
-                    ],
-                    "to": userDriver_2,
-                    "messages": [
-                        {
-                            "type": "text",
-                            "text": `📢 ลูกค้าชำระเงินเรียบร้อย!\n🕐 ${timestamp}`,
-                        },
-                    ],
-                    "to": userDriver_3,
+                const userIds = [userOderAdmin, userDriver_1, userDriver_2, userDriver_3];
+                const pushMessage = {
                     "messages": [
                         {
                             "type": "text",
@@ -80,12 +59,17 @@ export async function POST(req) {
                         },
                     ]
                 }
-                await axios.post('https://api.line.me/v2/bot/message/push', message, {
-                    headers: {
-                        'Content-Type': 'application/json',
-                        'Authorization': `Bearer ${tokenAdmin}`
-                    }
+                const sendMessage = userIds.map(userIds => {
+                    return axios.post('https://api.line.me/v2/bot/message/push',
+                        { to: userIds, ...pushMessage },
+                        {
+                            headers: {
+                                'Content-Type': 'application/json',
+                                'Authorization': `Bearer ${tokenAdmin}`,
+                            }
+                        });
                 });
+                await Promise.all(sendMessage);
             }
         }
         console.log("events", events)
